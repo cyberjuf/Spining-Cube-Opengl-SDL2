@@ -1,0 +1,2 @@
+#!/bin/bash
+MANGOHUD_DLSYM=1 MANGOHUD_PCI_DEV="0000:01:00.0" mangohud ./bin/Debug/testSDLAPP 

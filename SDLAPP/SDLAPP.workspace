@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="SDLGL">
+		<Project filename="SDLAPP.cbp" />
+		<Project filename="../testSDLAPP/testSDLAPP.cbp" />
+		<Project filename="../imguitest/imguitest.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

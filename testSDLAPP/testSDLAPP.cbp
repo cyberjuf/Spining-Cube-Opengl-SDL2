@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="testSDLAPP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/testSDLAPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLEW" />
+					<Add directory="../../../../usr/include/SDL2" />
+					<Add directory="../imgui" />
+					<Add directory="../imgui/examples" />
+				</Compiler>
+				<Linker>
+					<Add directory="../SDLAPP/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/testSDLAPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLEW" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl2-config --libs`" />
+			<Add library="GL" />
+			<Add library="GLEW" />
+			<Add library="GLU" />
+			<Add library="glut" />
+			<Add library="SDLAPP" />
+			<Add library="SDL_mixer" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="mywindow.cpp" />
+		<Unit filename="mywindow.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
